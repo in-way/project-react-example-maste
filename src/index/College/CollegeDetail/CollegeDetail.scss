@@ -1,0 +1,125 @@
+@charset "utf-8";
+@import "~@share/shareui-html/src/sass/base/variables";
+.college-pane{
+    font-family: SimSun;
+    height: 300px;
+    .info-pane{
+        float: left;
+        width: 440px;
+    }
+    .info-detail{
+        padding-bottom: 20px;
+        border-bottom: 1px solid $color-black-8;
+        .detail-logo{
+            float: left;
+            width: 133px;
+            height: 133px;
+        }
+        .detail-content{
+            margin-left: 150px;
+            h5{
+                margin-top: 0;
+                margin-bottom: 20px;
+                font-family: "Microsoft YaHei";
+                font-size: 22px;
+                color: $color-black-3;
+            }
+            ul{
+                padding-left: 0;
+                list-style: none;
+                li + li{
+                    margin-top: 10px;
+                }
+                .fa{
+
+                    font-size: 14px;
+                    color: $color-black-5;
+                }
+                .key{
+                    color: $color-black-5;
+                    &.key-type{
+                        margin-left: 3px;
+                    }
+                    &.key-address{
+                        margin-left: 8px;
+                    }
+                }
+                .value{
+                    &.value-type{
+                        color: $color-skyblue-3;
+                    }
+                    &.value-address{
+                        color: $color-black-3;
+                    }
+                }
+            }
+        }
+    }
+    .info-total{
+        padding-top: 40px;
+        ul{
+            padding-left: 20px;
+            list-style: none;
+            li{
+                float: left;
+            }
+            li + li{
+                margin-left: 70px;
+            }
+            .fa{
+                margin-right: 10px;
+                font-size: 14px;
+                &.fa-building{
+                    color: $color-seablue-1;
+                }
+                &.fa-book{
+                    color: $color-skyblue-1;
+                }
+                &.fa-users{
+                    color: $color-orange-1;
+                }
+                &.fa-external-link{
+                    margin-left: 5px;
+                }
+            }
+            .key{
+                color: $color-black-5;
+            }
+            .value{
+                display: block;
+                font-weight: bold;
+                font-size: 30px;
+                &.value-academy{
+                    color: $color-seablue-3;
+                }
+                &.value-major{
+                    color: $color-skyblue-3;
+                }
+                &.value-student{
+                    color: $color-orange-3;
+                    cursor: pointer;
+                }
+            }
+
+        }
+    }
+    .map-pane{
+        height: 300px;
+        margin-left: 460px;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+.item-pane{
+    display: block;
+    margin-left: -3px;
+    .item-major{
+        margin: 3px;
+    }
+}
+
+
+

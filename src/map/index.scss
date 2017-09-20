@@ -1,0 +1,106 @@
+
+body,html{
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+#myMap{
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.toolsbar{
+  .u-nav.layerCtrl{
+    display: none;
+  }
+}
+.esriOverviewMap.ovwBR{
+  display: none!important;
+}
+
+.noToolBar{
+  .toolsbar{
+    display: none!important;
+  }
+}
+.noToggleMap{
+  .BasemapToggle{
+    display: none!important;
+  }
+}
+.noZoomSlider{
+  #myMap_zoom_slider{
+    display: none!important;
+  }
+}
+
+// 缩放至
+.sizer .actionsPane{
+    display: none;
+}
+
+// 弹出框
+.esriPopupWrapper{
+   position: relative;
+  .titlePane{padding: 0!important;}
+  .contentPane{
+    padding: 0 32px 0 0!important;
+    color: #333;
+  }
+  .titleButton.close{
+    color: #74767a!important;
+    opacity: 1;
+    position: absolute!important;
+    right: 0!important;
+    top: 0!important;
+    z-index: 5;
+  }
+
+  // default
+  .default{
+    font: normal 14px/1.4 "SimSun";
+    color: #74767a;
+    padding: 10px;
+    >div{
+      margin: 6px 0;
+    }
+  }
+}
+// 设置默认弹出框的宽度
+.calcite .esriPopup .sizer{
+  width: 270px!important;
+}
+
+.mapLegend{
+  min-width: 140px;
+  list-style: none;
+  background-color: #fff;
+  padding: 10px;
+  margin: 0;
+  position: absolute;
+  left: 5px;
+  bottom: 5px;
+  z-index: 5;
+  font-size: 0;
+  >li{
+    margin: 10px 0;
+    .left{
+      width : 40px;
+      height : 20px;
+      float: left;
+      margin-right: 10px;
+      -webkit-background-size: 20px 20px;
+      background-size: 20px 20px;
+    }
+    .right{
+      display: inline-block;
+      font: normal 14px/20px "SimSun";
+    }
+  }
+
+}
+
+

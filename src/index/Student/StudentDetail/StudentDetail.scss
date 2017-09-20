@@ -1,0 +1,171 @@
+@charset "utf-8";
+@import "~@share/shareui-html/src/sass/base/variables";
+.college-pane{
+    font-family: SimSun;
+    height: 300px;
+    .info-pane{
+        float: left;
+        width: 440px;
+    }
+    .info-detail{
+        padding-bottom: 20px;
+        border-bottom: 1px solid $color-black-8;
+        .detail-logo{
+            float: left;
+            width: 133px;
+            height: 133px;
+        }
+        .detail-content{
+            margin-left: 150px;
+            h5{
+                margin-top: 0;
+                margin-bottom: 20px;
+                font-family: "Microsoft YaHei";
+                font-size: 22px;
+                color: $color-black-3;
+            }
+            ul{
+                padding-left: 0;
+                list-style: none;
+                li + li{
+                    margin-top: 10px;
+                }
+                .fa{
+                    margin-right: 5px;
+                    font-size: 14px;
+                    color: $color-black-5;
+                }
+                .key{
+                    color: $color-black-5;
+                }
+                .value{
+                    &.value-type{
+                        color: $color-skyblue-3;
+                    }
+                    &.value-address{
+                        color: $color-black-3;
+                    }
+                }
+            }
+        }
+    }
+    .info-total{
+        padding-top: 40px;
+        ul{
+            padding-left: 20px;
+            list-style: none;
+            li{
+                float: left;
+            }
+            li + li{
+                margin-left: 70px;
+            }
+            .fa{
+                margin-right: 10px;
+                font-size: 14px;
+                &.fa-building{
+                    color: $color-seablue-1;
+                }
+                &.fa-book{
+                    color: $color-skyblue-1;
+                }
+                &.fa-users{
+                    color: $color-orange-1;
+                }
+                &.fa-external-link{
+                    margin-left: 5px;
+                }
+            }
+            .key{
+                color: $color-black-5;
+            }
+            .value{
+                display: block;
+                font-weight: bold;
+                font-size: 30px;
+                &.value-academy{
+                    color: $color-seablue-3;
+                }
+                &.value-major{
+                    color: $color-skyblue-3;
+                }
+                &.value-student{
+                    color: $color-orange-3;
+                }
+            }
+
+        }
+    }
+    .map-pane{
+        height: 300px;
+        margin-left: 460px;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+.item-pane{
+    display: block;
+    margin-left: -3px;
+    .item-major{
+        margin: 3px;
+    }
+}
+
+.warningItem{
+    background-color: #FFEDD5;
+    >label{
+        color:#f00;
+        background-color: #FFEDD5;
+    }
+    .text-default{
+        color: #76757A;
+    }
+    &:after{
+        background-color: #FFEDD5 !important;
+    }
+}
+
+.studentInfo{
+    .pic{
+        width: 100px;
+        height: 140px;
+    }
+    .infoList{
+        margin-left: 120px;
+        h3{
+            font-size: 22px;
+            margin-top: 10px;
+        }
+        .list-item{
+            line-height: 22px;
+            margin-bottom: 10px;
+        }
+        label{
+            width: 98px;
+            margin-bottom: 0;
+            font-weight: normal;
+            color: #74767a;
+        }
+        .textShow{
+            display: inline-block;
+            color: #404348;
+        }
+    }
+    .fa-item{
+        width: 20px;
+        height: 20px;
+        font-size: 12px;
+        padding: 4px;
+        margin-right: 8px;
+        text-align: center;
+    }
+    .col-sm-12{
+        padding: 0;
+    }
+    .row{
+        margin: 0;
+    }
+}

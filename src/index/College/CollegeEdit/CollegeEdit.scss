@@ -1,0 +1,91 @@
+.collegeEditPage {
+    .p0 {
+        padding: 0;
+    }
+    .school-mark-box {
+        display: flex;
+        align-items: center;
+    }
+    .school-mark-img {
+        margin-right: 16px;
+        border: 1px solid #d0d1d4;
+    }
+    .form-search-wrap .item {
+        width: 100%;
+    }
+    .item .fa {
+        color: #26d0ef;
+    } //.school-info-top {
+    //  display: table-row;
+    //  overflow: hidden;
+    //}
+    //.school-top-item {
+    //  display: table-cell;
+    //}
+    .btn-management {
+        padding-right: 14px;
+        cursor: pointer;
+        .fa {
+            //color: #76747a;
+            margin-right: 4px;
+        } //span {
+        //  font-size: 12px;
+        //  color: #76747a;
+        //}
+    }
+    .table-delete {
+        color: #dd4433;
+    }
+    td .table_do_a {
+        cursor: pointer;
+    }
+    #js-table .share-table tr,
+    #js-table__college_model .share-table tr,
+    #js-table___departments_model .share-table tr {
+        background: #fff;
+    }
+    #js-table .share-table tr:nth-child(2n),
+    #js-table__college_model .share-table tr:nth-child(2n+1),
+    #js-table___departments_model .share-table tr:nth-child(2n+1) {
+        background: #f7f8f9;
+    }
+    .item-major+.item-major {
+        margin-left: 18px;
+    }
+    .fa-question-circle,
+    table {
+        cursor: default;
+    }
+}
+
+.btn-import {
+    position: relative;
+}
+
+.importCollege {
+    font-size: 0;
+    cursor: pointer;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    bottom: 0;
+    z-index: 1;
+    opacity: 0;
+}
+
+.share-table.import tr {
+    td,
+    th {
+        text-align: center;
+    }
+    .fail-info {
+        color: #dd4433;
+    }
+}
+
+.map-box {
+    background-color: #fff;
+    height: 344px;
+    padding: 10px;
+}

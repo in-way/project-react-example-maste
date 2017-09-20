@@ -1,0 +1,180 @@
+@charset "UTF-8";
+
+/*======字体颜色======*/
+//主色-黑色
+$color-black-1: #323538;
+$color-black-2: #383b3f;
+$color-black-3: #404348; //十进制  4211528
+$color-black-4: #55585D;
+$color-black-5: #74767A; //十进制  7632506
+$color-black-6: #A4A5A9;
+$color-black-7: #d0d1d4;
+$color-black-8: #ebeced;
+$color-black-9: #f7f8f9;
+//主色-冰海蓝
+$color-seablue-1: #0099dd;
+$color-seablue-2: #0088cc;
+$color-seablue-3: #0077BB;
+$color-seablue-4: #c0ecff;
+$color-seablue-4-1: #d5f2ff;
+$color-seablue-5: #e0f6ff;
+//辅助色-红色
+$color-red-1: #FF6655;
+$color-red-2: #EE5544;
+$color-red-3: #DD4433;
+$color-red-4: #ffd1cc;
+$color-red-4-1: #FFE0DD;
+$color-red-5: #ffefee;
+//辅助色-橙色
+$color-orange-1: #FFAA33;
+$color-orange-2: #FF9922;
+$color-orange-3: #FF8811;
+$color-orange-4: #ffe5c1;
+$color-orange-4-1: #FFEDD5;
+$color-orange-5: #fff6ea;
+//辅助色-绿色
+$color-green-1: #00BB88;
+$color-green-2: #00AA77;
+$color-green-3: #009966;
+$color-green-4: #b2f3db;
+$color-green-4-1: #CBF7E7;
+$color-green-5: #e5fcf3;
+//辅助色-信息蓝
+$color-skyblue-1: #00CCEE;
+$color-skyblue-2: #00BBDD;
+$color-skyblue-3: #00AACC;
+$color-skyblue-4: #b2f0fa;
+$color-skyblue-4-1: #CBF5FB;
+$color-skyblue-5: #e5fafd;
+
+.fiBox{
+  position: relative;
+
+  .fiSearchBox{
+    position: absolute;
+    z-index: 99;
+    left: 0;
+    right: 0;
+    margin-top: 2px;
+    background: #fff;
+    border: 1px solid $color-black-7;
+    -webkit-box-shadow: 0 3px 12px #d2cbcb;
+    -moz-box-shadow:  0 3px 12px #d2cbcb;
+    box-shadow:  0 3px 12px #d2cbcb;
+
+    .form-group{
+      padding: 8px 8px 4px;
+      margin: 0;
+
+      .input-group-addon{
+        cursor: pointer;
+      }
+    }
+  }
+
+  .searchInput{
+    background: #fff;
+  }
+}
+
+.fiResult{
+  max-height: 195px;
+  overflow: auto;
+  position: relative;
+
+  .list-group-item{
+    border-top: none;
+    padding: 7px 18px;
+
+    &:hover{
+      background: $color-seablue-1;
+      color: #fff;
+    }
+
+    i, span{
+      vertical-align: middle;
+    }
+
+    i{
+      margin-right: 8px;
+    }
+  }
+}
+
+.searchMath{
+  color: red;
+}
+
+.specialItem{
+  .displayTd{
+    overflow: inherit!important;
+  }
+
+  .item{
+    > label{
+      background: #FAFAFA!important;
+      position: absolute!important;
+    }
+  }
+  .item:after{
+    height: auto!important;
+    background: none!important;
+  }
+}
+
+.item{
+  > label{
+    .fa{
+      color: #00CCEE;
+      margin-right: 5px;
+      vertical-align: -2px;
+    }
+  }
+}
+
+#fiLoading{
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  z-index: 999;
+
+  span{
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    border-radius: 100%;
+    margin: 90px;
+    border: 2px solid #fff;
+    border-bottom-color: transparent;
+    vertical-align: middle;
+    -webkit-animation: rotate 0.75s linear infinite;
+    animation: rotate 0.75s linear infinite;
+  }
+}
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

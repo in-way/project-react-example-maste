@@ -1,0 +1,24 @@
+.btn-import {
+    position: relative;
+  }
+.importStudent {
+    font-size: 0;
+    cursor: pointer;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    bottom: 0;
+    z-index: 1;
+    opacity: 0;
+}
+
+.share-table.import tr{
+    td, th {
+      text-align: center;
+    }
+    .fail-info {
+      color: #dd4433;
+    }
+  }
+
